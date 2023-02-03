@@ -1,4 +1,3 @@
-import logo from '../assets/Rectangle1.png'
 const Main = () => {
     return (
         <main className='main-section'>
