@@ -30,9 +30,9 @@ const Nav = () => {
             <div className="logo">AD</div>
             <div className="links" style={ showNav ? { display: 'block' } : { display:''}}>
                 <ul>
-                    <li><a onClick={scroll2Handler}>about</a></li>
-                    <li ><a onClick={scrollHandler}>projects</a></li>
-                    <li><a onClick={scroll3Handler}>contact</a></li>
+                    <li><a onClick={scroll2Handler} href=''>about</a></li>
+                    <li ><a onClick={scrollHandler} href=''>projects</a></li>
+                    <li><a onClick={scroll3Handler} href=''>contact</a></li>
                 </ul>
             </div>
             <div className='burger-menu' onClick={navHandler}>

@@ -1,19 +1,18 @@
 import { data } from "../data/data"
-import { useRef, useState, useEffect} from "react"
+import { useRef, useState} from "react"
 import { useOnScreen } from "./hooks"
 const Section = () => {
     const textRef = useRef(null)
     const selectedProject = useOnScreen(textRef)
     const [width, setWidth] = useState(window.innerWidth)
     window.addEventListener('resize', () => setWidth(window.innerWidth))
-    console.log(width)
     return (
 
         width >= 800 ? <div className="main-container">
         <div>
         {data.map(dat =>
-            <section key={ dat.id } className={ `text-element ${dat.video}` } ref={textRef}>
-                <div className='project-container projects-list'>
+            <section key={ dat.id } className={ `text-element ${dat.video}` } ref={textRef} >
+                <div className='project-container projects-list' key={dat.id} >
                     <div className="sub-1">
                         <h2>{dat.name}</h2>
                         <p>{dat.description}</p>  
@@ -40,7 +39,7 @@ const Section = () => {
             <div>
                 <section id="section-mobile">
                 {data.map(dat =>
-                    <div className='project-container-mobile projects-list'>
+                    <div className='project-container-mobile projects-list' key={dat.id}>
                         <div className="video-container-mobile" dangerouslySetInnerHTML={{ __html: `
         <video
           loop

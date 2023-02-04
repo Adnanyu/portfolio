@@ -9,7 +9,6 @@ export const useOnScreen = (ref) => {
             }
         });
     }, { threshold: 0.4 })
-    console.log(selectedProject)
  
     useEffect(() => {
         const textElements = document.querySelectorAll('.text-element');
@@ -18,7 +17,7 @@ export const useOnScreen = (ref) => {
             console.log(selectedProject)
             textElements.forEach(textElement => observer.unobserve(textElement));
         }*/
-    }, [selectedProject]);
+    }, [observer]);
     return selectedProject
 }
 
