@@ -1,6 +1,6 @@
 import shopping from '../assets/shopping.mov'
 import weather from '../assets/weatvideo.mov'
-import calculator from '../assets/calvideo.mov'
+import calculator from '../assets/calvideo.mp4'
 export const data = [{
     id: 1,
     name: 'e-commerce',
