@@ -1,3 +1,4 @@
 calvideo.mov filter=lfs diff=lfs merge=lfs -text
 shopping.mov filter=lfs diff=lfs merge=lfs -text
 weatvideo.mov filter=lfs diff=lfs merge=lfs -text
+calvideo.mp4 filter=lfs diff=lfs merge=lfs -text
