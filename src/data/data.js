@@ -1,5 +1,5 @@
-import shopping from '../assets/shopping.mov'
-import weather from '../assets/weatvideo.mov'
+import shopping from '../assets/shopping.mp4'
+import weather from '../assets/weatvideo.mp4'
 import calculator from '../assets/calvideo.mp4'
 export const data = [{
     id: 1,
