@@ -63,7 +63,7 @@ body{
 }
 .profile-links{
   display: inline-block;
-  background-color: rgb(97, 90, 90);
+  background-color: #000;
   width: 8rem;
   padding: 15px;
   margin: 9px;
@@ -79,7 +79,7 @@ body{
   display: flex;
   justify-content: center;
   height: auto;
-  background-color: #cdcccc;
+  background-color: #f2f2f2;
 }
 .about-container{
   width: 60vw;
