@@ -8,7 +8,10 @@ const Section = () => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))
     return (
 
-        width >= 800 ? <div className="main-container">
+        width >= 800 ?
+            <>
+        <h2 className="projects-title">personal projects</h2>
+        <div className="main-container">
         <div>
         {data.map(dat =>
             <section key={ dat.id } className={ `text-element ${dat.video}` } ref={textRef} >
@@ -34,22 +37,16 @@ const Section = () => {
                 {selectedProject && <video src={ selectedProject[1]}  className={selectedProject[1][14]}  style={{opacity: '1'}} loop autoPlay muted webkit-playsinline playsInline ></video>}
             </div>
         </div>
+        </>
             :
         <div>
             <div>
+                <h2 className="projects-title">personal projects</h2>
                 <section id="section-mobile">
                 {data.map(dat =>
                     <div className='project-container-mobile projects-list' key={dat.id}>
                         <div className="video-container-mobile" dangerouslySetInnerHTML={{ __html: `
-        <video
-          loop
-          muted
-          autoplay
-          playsinline
-          src="${dat.video}"
-          
-        />,
-      ` }}>
+                            <video loop muted autoplay playsinline src="${dat.video}" />, ` }}>
                         </div>
                         <div className="sub-1">
                             <h2>{dat.name}</h2>

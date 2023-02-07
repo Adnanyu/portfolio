@@ -11,7 +11,7 @@ const Contact = () => {
             <h2 className="about-title">contact me</h2>
             <div className='icons-container'>
                 <div><a href="https://github.com/Adnanyu" target='_blank' rel="noreferrer" o><img src={github} alt="github-contact" /></a></div>
-                <div><a target='_blank' rel="noreferrer"><img src={linkedin} alt="linkedin-contact" /></a></div>
+                <div><a href='https://www.linkedin.com/in/aden-abdi-yusuf-3511aa265/' target='_blank' rel="noreferrer"><img src={linkedin} alt="linkedin-contact" /></a></div>
                 <div onClick={handleClick}><a  target='_blank' rel="noreferrer" ></a><img src={gmail} alt="email-contact" /></div>
             </div>
         </section>
