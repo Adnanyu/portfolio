@@ -1,4 +1,4 @@
-import Pdf from '../assets/adenyusuf.pdf'
+import Pdf from '../assets/aden2.pdf'
 const Main = () => {
     return (
         <main className='main-section'>
