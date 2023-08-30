@@ -8,7 +8,6 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: ease-out 0.5s;
 }
 .logo{
   font-family: 'Great Vibes', cursive;
@@ -19,7 +18,6 @@ body{
   margin: 0;
   padding: 0;
   display: flex;
-  transition: ease-out 2s;
 }
 .links li a{
   padding: 1rem;
