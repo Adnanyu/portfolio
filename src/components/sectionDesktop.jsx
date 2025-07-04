@@ -20,7 +20,7 @@ const Section = () => {
                         <h2>{dat.name}</h2>
                         <p>{dat.description}</p>  
                         <div className="project-links-container">
-                            <a href={ dat.live_link } target='_blank' rel="noreferrer" className='project-links'>see live{ dat.live_icon}</a>
+                            {dat.live_link ? <a href={ dat.live_link } target='_blank' rel="noreferrer" className='project-links'>see live{ dat.live_icon}</a>: ''}
                            <a href={dat.github_link} target='_blank' rel="noreferrer" className='project-links'>see respository {dat.github_icon}</a>
                         </div>  
                     </div>
@@ -34,7 +34,10 @@ const Section = () => {
             </section>) }
         </div>
             <div className="video-container">
-                {selectedProject && <video src={ selectedProject[1]}  className={selectedProject[1][14]}  style={{opacity: '1'}} loop autoPlay muted webkit-playsinline playsInline ></video>}
+                {selectedProject && <video src={ selectedProject[1]}  className={selectedProject[1][14]}  style={{opacity: '1', width: '100%',
+    height: '550px',
+    objectFit: 'contain', // or 'contain'
+    opacity: '1'}}  loop autoPlay muted webkit-playsinline playsInline ></video>}
             </div>
         </div>
         </>
