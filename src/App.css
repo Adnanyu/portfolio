@@ -73,6 +73,86 @@ body{
   text-decoration: none;
   color: #fff;
 }
+/* .main-header {
+  position: relative;
+  font-size: 46px;
+  white-space: nowrap;
+} */
+
+/* the typing mask */
+/* .main-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: white; 
+  border-left: 3px solid black;
+  animation:
+    typing 3s steps(22) forwards,
+    blink 0.6s step-end infinite;
+} */
+
+/* typing animation */
+/* @keyframes typing {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+} */
+
+/* blinking cursor */
+/* @keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+} */
+
+.main-header,
+.sub-text {
+  position: relative;
+  white-space: nowrap;
+  display: block;
+  width: max-content;
+}
+.main-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: white; 
+  border-left: 3px solid black;
+  animation:
+    typing-h1 3s steps(22) forwards,
+    blink 0.6s step-end infinite;
+}
+
+@keyframes typing-h1 {
+  from { left: 0; }
+  to { left: 100%; }
+}
+.sub-text::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: white; 
+  border-left: 3px solid black;
+  animation:
+    typing-p 2.5s steps(27) forwards,
+    blink 0.6s step-end infinite;
+  animation-delay: 3s; 
+}
+
+@keyframes typing-p {
+  from { left: 0; }
+  to { left: 100%; }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 /*about section*/
 .about-section{
   display: flex;
@@ -87,9 +167,41 @@ body{
   font-size: 2vw;
   line-height: 2em;
 }
-.about-title{
-  text-align: center;
+
+/* Base styling for the title */
+.about-title {
+  display: block;
+  width: fit-content; 
+  margin: 0 auto;     
+  position: relative;
+  white-space: nowrap;
 }
+
+/* Typing cursor effect */
+/* .about-title::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #f2f2f2;           
+  border-left: 3px solid black;  
+  animation:
+    typing 2s steps(8) forwards, 
+    blink 0.6s step-end infinite;
+  animation-play-state: paused;
+  
+} */
+
+/* Typing keyframes */
+/* @keyframes typing {
+  from { left: 0; }
+  to { left: 100%; }
+} */
+
+/* Cursor blink */
+/* @keyframes blink {
+  50% { border-color: transparent; }
+} */
+
 /*projects section*/
 .project-container{
   /*display: flex;
@@ -339,3 +451,5 @@ svg{
     background-color: #fff;
   }
 }
+
+
