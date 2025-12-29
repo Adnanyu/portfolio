@@ -57,7 +57,7 @@ body{
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
+  font-size: 2em;
   color: #000;    
 }
 .profile-links{
@@ -113,7 +113,7 @@ body{
   position: relative;
   white-space: nowrap;
   display: block;
-  width: max-content;
+  width: max-content; 
 }
 .main-header::after {
   content: "";
@@ -150,6 +150,15 @@ body{
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@media (max-width: 750px) {
+  .main-header {
+    font-size: 6vw; 
+  }
+  .main-text > p{
+    font-size: 1em;
   }
 }
 
